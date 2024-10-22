@@ -1,0 +1,131 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/1_01.jpg)"></div>
+			<div style="background-image:url(pages/1_01.jpg)"></div>
+			<div style="background-image:url(pages/1_02.jpg)"></div>
+			<div style="background-image:url(pages/2_01.jpg)"></div>
+			<div style="background-image:url(pages/2_02.jpg)"></div>
+			<div style="background-image:url(pages/3_01.jpg)"></div>
+			<div style="background-image:url(pages/3_02.jpg)"></div>
+			<div style="background-image:url(pages/4_01.jpg)"></div>
+			<div style="background-image:url(pages/4_02.jpg)"></div>
+			<div style="background-image:url(pages/5_01.jpg)"></div>
+			<div style="background-image:url(pages/5_02.jpg)"></div>
+			<div style="background-image:url(pages/6_01.jpg)"></div>
+			<div style="background-image:url(pages/6_02.jpg)"></div>
+			<div style="background-image:url(pages/7_01.jpg)"></div>
+			<div style="background-image:url(pages/7_02.jpg)"></div>
+			<div style="background-image:url(pages/8_01.jpg)"></div>
+			<div style="background-image:url(pages/8_02.jpg)"></div>
+			<div style="background-image:url(pages/9_01.jpg)"></div>
+			<div style="background-image:url(pages/9_02.jpg)"></div>
+			<div style="background-image:url(pages/11_01.jpg)"></div>
+			<div style="background-image:url(pages/11_02.jpg)"></div>
+			<div style="background-image:url(pages/12_01.jpg)"></div>
+			<div style="background-image:url(pages/12_02.jpg)"></div>
+			<div style="background-image:url(pages/13_01.jpg)"></div>
+			<div style="background-image:url(pages/13_02.jpg)"></div>
+			<div style="background-image:url(pages/14_01.jpg)"></div>
+			<div style="background-image:url(pages/14_02.jpg)"></div>
+			<div style="background-image:url(pages/15_01.jpg)"></div>
+			<div style="background-image:url(pages/15_02.jpg)"></div>
+			<div style="background-image:url(pages/16_01.jpg)"></div>
+			<div style="background-image:url(pages/16_02.jpg)"></div>
+			<div style="background-image:url(pages/17_01.jpg)"></div>
+			<div style="background-image:url(pages/17_02.jpg)"></div>
+			<div style="background-image:url(pages/18_01.jpg)"></div>
+			<div style="background-image:url(pages/18_02.jpg)"></div>
+			<div style="background-image:url(pages/19_01.jpg)"></div>
+			<div style="background-image:url(pages/19_02.jpg)"></div>
+			<div style="background-image:url(pages/20_01.jpg)"></div>
+			<div style="background-image:url(pages/20_02.jpg)"></div>
+			<div style="background-image:url(pages/21_01.jpg)"></div>
+			<div style="background-image:url(pages/21_02.jpg)"></div>
+			<div style="background-image:url(pages/22_01.jpg)"></div>
+			<div style="background-image:url(pages/22_02.jpg)"></div>
+			<div style="background-image:url(pages/23_01.jpg)"></div>
+			<div style="background-image:url(pages/23_02.jpg)"></div>
+			<div style="background-image:url(pages/24_01.jpg)"></div>
+			<div style="background-image:url(pages/24_02.jpg)"></div>
+			<div style="background-image:url(pages/25_01.jpg)"></div>
+			<div style="background-image:url(pages/25_02.jpg)"></div>
+			<div style="background-image:url(pages/26_01.jpg)"></div>
+			<div style="background-image:url(pages/26_02.jpg)"></div>
+			<div style="background-image:url(pages/27_01.jpg)"></div>
+			<div style="background-image:url(pages/27_02.jpg)"></div>
+			<div style="background-image:url(pages/28_01.jpg)"></div>
+			<div style="background-image:url(pages/28_02.jpg)"></div>
+			<div style="background-image:url(pages/29_01.jpg)"></div>
+			<div style="background-image:url(pages/29_02.jpg)"></div>
+			<div style="background-image:url(pages/30_01.jpg)"></div>
+			<div style="background-image:url(pages/30_02.jpg)"></div>
+			<div style="background-image:url(pages/31_01.jpg)"></div>
+			<div style="background-image:url(pages/31_02.jpg)"></div>
+			<div style="background-image:url(pages/32_01.jpg)"></div>
+			<div style="background-image:url(pages/32_02.jpg)"></div>
+
+			
+			
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
