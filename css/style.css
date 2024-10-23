@@ -732,15 +732,20 @@ Resume Timeline
 .timeline>li .posted-date {
     position: relative;
     text-align: center;
-    background-color: #fff;
+    background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
     left: 20px;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 0;
+    border-radius: 30px;
+
 }
 
 
 .timeline>li .posted-date .month {
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: 600;
     display: block;
     color: #1e1e20;
     top: 0;
@@ -798,7 +803,8 @@ Resume Timeline
     .timeline>li .posted-date {
         position: absolute;
         text-align: center;
-        background-color: #fff;
+        background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
+ 
     }
 
     .timeline>li .timeline-panel {
@@ -833,10 +839,6 @@ Resume Timeline
     .timeline>li .timeline-content:hover {
         background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
         /* 30%는 빨간색, 70%는 파란색 */
-
-
-
-
 
         color: #fff;
     }
@@ -924,6 +926,8 @@ Resume Timeline
 
     .timeline>li .posted-date .month {
         float: none;
+        color: #fff;
+        font-weight: 600;
     }
 
 
@@ -1673,7 +1677,9 @@ Icon for all respective meta
 
 
 .q_link:hover {
-    border: 0.5px solid rgba(37, 37, 37, 0);
+    border: none;
+
+    box-sizing: border-box;
     background: linear-gradient(to top, #a3a3a3 30%, #3a3a3a 70%);
         /* 30%는 빨간색, 70%는 파란색 */
 }
