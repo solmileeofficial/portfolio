@@ -730,9 +730,10 @@ Resume Timeline
 }
 
 .timeline>li .posted-date {
+    width: 20%;
     position: relative;
     text-align: center;
-    background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
+    /* background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%); */
     left: 20px;
     color: #fff;
     cursor: pointer;
@@ -804,8 +805,35 @@ Resume Timeline
         position: absolute;
         text-align: center;
         background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
- 
+        width: 100%;
+        
+        /* background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
+        left: 20px;
+
+        cursor: pointer;
+        padding: 6px 0;
+        border-radius: 30px; */
     }
+
+
+    
+    
+    .timeline>li .posted-date .month {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        display: block;
+        color: #1e1e20;
+        top: 0;
+        float: left;
+    }
+
+
+
+
+
+
+
 
     .timeline>li .timeline-panel {
         float: left;
@@ -937,7 +965,7 @@ Resume Timeline
 
 /* === Skill Section === */
 .skills-section {
-    background: url(../images/noise.jpg) no-repeat center;
+    background: url(../images/noise.jpg) repeat center;
     color: #fff;
 }
 
@@ -1150,11 +1178,17 @@ Resume Timeline
 
 .entry-header {
     padding: 30px 12px;
+
 }
 
 @media (max-width:991px) {
     .entry-header {
-        padding: 20px 12px 0;
+        padding: 20px 12px 30px;
+        
+    }
+
+    .list-inline{
+        justify-content: center;
     }
 }
 
@@ -1657,18 +1691,26 @@ Icon for all respective meta
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
 }
-
+.list-inline{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .brand_sub_title {
     font-size: 20px;
     margin-top: 20px;
     font-weight: bold;
 }
+.link_wid{
+    width: 133px;
+}
+
 
 .q_link {
+    text-align: center;
     border: 1px solid #1e1e20;
-    display: inline-block;
-    padding: 6px 30px;
+    display: block;
+    padding: 6px 0;
     border-radius: 30px;
     margin-left: 10px;
     font-weight: 700;
@@ -1676,9 +1718,11 @@ Icon for all respective meta
 }
 
 
-.q_link:hover {
-    border: none;
 
+
+.q_link:hover {
+    padding: 7px 0;
+    border: none;
     box-sizing: border-box;
     background: linear-gradient(to top, #a3a3a3 30%, #3a3a3a 70%);
         /* 30%는 빨간색, 70%는 파란색 */
@@ -1689,10 +1733,19 @@ Icon for all respective meta
     clear: both;
 }
 
-.element{
+/* #works .container{
+    margin: 0 auto;
+    width: 1440px;
+    position: relative;
+    z-index: 999;
+} */
+.header_ele_wrap{
+    margin: 0 auto;
+    width: 1440px;
     position: relative;
     z-index: 999;
 }
+
 
 .element_img {
 
@@ -1733,14 +1786,18 @@ Icon for all respective meta
     right: -501px;
 }
 
+
 .header_ele {
-    width: 100%;            /* 부모 요소 너비에 맞추어 이미지가 유연하게 변경됨 */
-    max-width: 800px;        /* 최대 너비는 800px로 제한 */
-    z-index: 99;
-    top: -200px;
-    left: -500px;     
+    width: 800px;            /* 부모 요소 너비에 맞추어 이미지가 유연하게 변경됨 */
+    top: -300px;
+    left: -700px;
     transition: transform 1s ease; /* 1초 동안 부드럽게 회전 */      
 }
+
+.header_ele img{
+width: 100%;
+}
+
 .header_ele:hover {
     transform: rotate(45deg); /* 호버 시 45도 시계방향으로 회전 */
 }
