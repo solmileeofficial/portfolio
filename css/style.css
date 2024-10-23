@@ -730,7 +730,7 @@ Resume Timeline
 }
 
 .timeline>li .posted-date {
-    width: 20%;
+
     position: relative;
     text-align: center;
     /* background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%); */
