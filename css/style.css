@@ -1254,6 +1254,11 @@ Resume Timeline
         left: -615px!important; 
     }
 
+	.section-padding {
+    padding: 0px 0 50px;
+}
+
+	
 }
 
 @media (max-width:767px){
