@@ -1217,6 +1217,25 @@ Resume Timeline
 
 }
 
+@media (max-width:1662px){
+    .header_ele {
+        max-width: 700px !important;
+
+        left: -604px!important; 
+    }
+
+}
+
+@media (max-width:1151px){
+    .header_ele {
+        max-width: 700px !important;
+
+        left: -637px!important; 
+    }
+
+}
+
+
 @media (max-width:991px) {
     .entry-header {
         padding: 20px 12px 30px;
@@ -1227,24 +1246,20 @@ Resume Timeline
         justify-content: center;
     }
 
-/* 
     .header_ele {
-        max-width: 500px !important;
-        top: -465px !important;
-        left: -300px !important;
-    } */
-}
+        max-width: 700px !important;
 
-
-@media (max-width:1662px){
-    .header_ele {
-        max-width: 300px !important;
-
-        left: -104px!important; 
+        left: -615px!important; 
     }
 
 }
 
+@media (max-width:767px){
+    .header_ele {
+       display: none;
+    }
+
+}
 
 .the-category {
     font-size: 25px;
