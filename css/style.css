@@ -323,12 +323,42 @@ ul.list-check li::before {
 }
 
 
+@media (max-width:951px) {
+
+    /* 모바일용 제목 */
+    .section-title{
+        text-align: center;
+    }
+
+
+}
 
 /* === HOME === */
 @media (max-width : 640px) {
     .tt-fullHeight {
         height: 560px !important;
     }
+
+    /* 모바일용 슬로건 크기 조정 */
+    .myphoto {
+        max-width: 500px;
+    }
+
+ /* 모바일용 클로버 수정 */
+
+
+.ele1 {
+    top: 0;
+    left: 308px;
+}
+
+.header_ele {
+  display: none;
+   
+}
+
+
+
 }
 
 
@@ -959,6 +989,8 @@ Resume Timeline
     }
 
 
+
+
 }
 
 
@@ -1190,6 +1222,8 @@ Resume Timeline
     .list-inline{
         justify-content: center;
     }
+
+
 }
 
 .the-category {
@@ -1733,12 +1767,7 @@ Icon for all respective meta
     clear: both;
 }
 
-/* #works .container{
-    margin: 0 auto;
-    width: 1440px;
-    position: relative;
-    z-index: 999;
-} */
+
 .header_ele_wrap{
     margin: 0 auto;
     width: 1440px;
@@ -1759,13 +1788,22 @@ Icon for all respective meta
     opacity: 1;
 }
 
+#works .container .section-title strong{
+       position: relative;
+    
+}
+
 .ele1 {
+    
+
+    animation: rotateMove 10s linear infinite;
+    /* 10초 동안 회전 및 이동 애니메이션 */
+
     width: 80px;
-    top: -59px;
-    left: 271px;
+    top: -10px;
+    left: 290px;
     z-index: -1;
-    position: relative;
-    /* 이동을 위한 relative 포지셔닝 */
+
 }
 
 .ele2 {
@@ -1804,10 +1842,6 @@ width: 100%;
 
 
 
-.ele1 img {
-    animation: rotateMove 10s linear infinite;
-    /* 10초 동안 회전 및 이동 애니메이션 */
-}
 
 .ele3 img {
     animation: blink 5s linear infinite;
