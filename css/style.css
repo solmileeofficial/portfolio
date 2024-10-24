@@ -297,8 +297,9 @@ ul.list-check li::before {
 .section-padding {
     padding: 0 0 100px;
 }
-
-
+.portfolio-padding{
+	padding-top: 100px
+}
 
 /* SECTION TITLE
 ----------------------------------------------------- */
