@@ -323,18 +323,14 @@ ul.list-check li::before {
 }
 
 
-@media (max-width:951px) {
-
-    /* 모바일용 제목 */
-    .section-title{
-        text-align: center;
-    }
-
-
-}
 
 /* === HOME === */
+
+
+
+
 @media (max-width : 640px) {
+
     .tt-fullHeight {
         height: 560px !important;
     }
@@ -344,22 +340,30 @@ ul.list-check li::before {
         max-width: 500px;
     }
 
- /* 모바일용 클로버 수정 */
+    /* 모바일용 클로버 수정 */
 
 
-.ele1 {
-    top: 0;
-    left: 308px;
+    .header_ele {
+        /* max-width: 500px !important;
+        top: -465px !important;
+        left: -300px !important; */
+       display: none;
+    }
+
+
+    /* 모바일용 제목 */
+    .section-title {
+        text-align: center;
+    }
+
+    #works .container .section-title{
+        margin: 0 auto;
+        width: 308px;
+    }
+
+
 }
 
-.header_ele {
-  display: none;
-   
-}
-
-
-
-}
 
 
 #home {
@@ -644,7 +648,7 @@ SOCIAL ICON
 
 /* === Resume Section === */
 
-#resume .row{
+#resume .row {
     padding-bottom: 100px;
 }
 
@@ -836,7 +840,7 @@ Resume Timeline
         text-align: center;
         background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
         width: 100%;
-        
+
         /* background: linear-gradient(to right top, #a3a3a3 30%, #3a3a3a 70%);
         left: 20px;
 
@@ -846,8 +850,8 @@ Resume Timeline
     }
 
 
-    
-    
+
+
     .timeline>li .posted-date .month {
         font-size: 18px;
         line-height: 20px;
@@ -1135,7 +1139,7 @@ Resume Timeline
 /* === Works Section === */
 
 
-#works .container .section-title{
+#works .container .section-title {
     margin-bottom: 0;
 }
 
@@ -1216,15 +1220,31 @@ Resume Timeline
 @media (max-width:991px) {
     .entry-header {
         padding: 20px 12px 30px;
-        
+
     }
 
-    .list-inline{
+    .list-inline {
         justify-content: center;
     }
 
+/* 
+    .header_ele {
+        max-width: 500px !important;
+        top: -465px !important;
+        left: -300px !important;
+    } */
+}
+
+
+@media (max-width:1662px){
+    .header_ele {
+        max-width: 300px !important;
+
+        left: -104px!important; 
+    }
 
 }
+
 
 .the-category {
     font-size: 25px;
@@ -1388,7 +1408,7 @@ Icon for all respective meta
 
 /* === Footer Wrapper === */
 .footer-wrapper {
- 
+
     padding: 36px 0;
     color: #fff;
 
@@ -1725,7 +1745,8 @@ Icon for all respective meta
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
 }
-.list-inline{
+
+.list-inline {
     display: flex;
     flex-wrap: wrap;
 }
@@ -1735,7 +1756,8 @@ Icon for all respective meta
     margin-top: 20px;
     font-weight: bold;
 }
-.link_wid{
+
+.link_wid {
     width: 133px;
 }
 
@@ -1759,7 +1781,7 @@ Icon for all respective meta
     border: none;
     box-sizing: border-box;
     background: linear-gradient(to top, #a3a3a3 30%, #3a3a3a 70%);
-        /* 30%는 빨간색, 70%는 파란색 */
+    /* 30%는 빨간색, 70%는 파란색 */
 }
 
 .spacing {
@@ -1768,11 +1790,12 @@ Icon for all respective meta
 }
 
 
-.header_ele_wrap{
+.header_ele_wrap {
     margin: 0 auto;
     width: 1440px;
     position: relative;
     z-index: 999;
+
 }
 
 
@@ -1788,14 +1811,14 @@ Icon for all respective meta
     opacity: 1;
 }
 
-#works .container .section-title strong{
-       position: relative;
-    
+#works .container .section-title {
+    position: relative;
+    width: 308px;
+
+
 }
 
 .ele1 {
-    
-
     animation: rotateMove 10s linear infinite;
     /* 10초 동안 회전 및 이동 애니메이션 */
 
@@ -1826,18 +1849,20 @@ Icon for all respective meta
 
 
 .header_ele {
-    width: 800px;            /* 부모 요소 너비에 맞추어 이미지가 유연하게 변경됨 */
-    top: -300px;
-    left: -700px;
-    transition: transform 1s ease; /* 1초 동안 부드럽게 회전 */      
+    width: 700px;
+    top: -308px;
+    left: -580px;
+    transition: transform 1s ease;
+    /* 1초 동안 부드럽게 회전 */
 }
 
-.header_ele img{
-width: 100%;
+.header_ele img {
+    width: 100%;
 }
 
 .header_ele:hover {
-    transform: rotate(45deg); /* 호버 시 45도 시계방향으로 회전 */
+    transform: rotate(45deg);
+    /* 호버 시 45도 시계방향으로 회전 */
 }
 
 
@@ -1896,6 +1921,7 @@ width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 900;
 }
+
 .kofont_small {
     font-size: 14px;
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1903,12 +1929,13 @@ width: 100%;
     line-height: 20px;
 }
 
-.kofont span{
+.kofont span {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: bold;
 }
+
 .circle {
     width: 100px;
     height: 100px;
@@ -1924,3 +1951,8 @@ width: 100%;
     cursor: pointer;
 }
 
+@media (max-width:300px){
+    .circle{
+        display: none;
+    }
+}
