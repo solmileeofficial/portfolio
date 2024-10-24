@@ -330,9 +330,7 @@ ul.list-check li::before {
 
 
 @media (max-width : 640px) {
- .circle{
-        display: none;
-    }
+
     .tt-fullHeight {
         height: 560px !important;
     }
