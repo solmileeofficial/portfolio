@@ -330,7 +330,9 @@ ul.list-check li::before {
 
 
 @media (max-width : 640px) {
-
+ .circle{
+        display: none;
+    }
     .tt-fullHeight {
         height: 560px !important;
     }
@@ -1964,10 +1966,4 @@ Icon for all respective meta
     pointer-events: none;
     z-index: 999;
     cursor: pointer;
-}
-
-@media (max-width:300px){
-    .circle{
-        display: none;
-    }
 }
